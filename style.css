@@ -4,9 +4,11 @@ html {
 body{
     background-color: rgb(61, 61, 61);
     background-image: url(images/background-adare-restaurant.jpg), linear-gradient(black,white);
-    background-size: cover, 150% 150%;
+    /* background-image: linear-gradient(black,white); */
+    background-size: 100% 150%;
     background-repeat: no-repeat,repeat;
-    background-position: center, center bottom;
+    background-position: center, absolute;
+    
 }
 .container {
     margin-left: auto;
