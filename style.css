@@ -4,8 +4,8 @@ html {
 body{
     background-color: rgb(61, 61, 61);
     background-image: url(images/background-adare-restaurant.jpg), linear-gradient(black,white);
-    background-size: cover, cover;
-    background-repeat: no-repeat, repeat;;
+    background-size: cover, 150% 150%;
+    background-repeat: no-repeat,repeat;
     background-position: center, center bottom;
 }
 .container {
@@ -49,6 +49,7 @@ main{
 
 footer{
     background-color:rgb(39, 38, 38);
+    margin-top: 400px;
     height: 100px;
     padding-top: 50px;
     text-align: center;
@@ -85,4 +86,15 @@ a:hover{
 
 .maps{
     padding-bottom: 100px;
+}
+
+
+#left {
+    float: left;
+    
+}
+
+#right {
+    float: right;
+    
 }
