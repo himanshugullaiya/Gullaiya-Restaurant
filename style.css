@@ -4,9 +4,11 @@ html {
 body{
     background-color: rgb(61, 61, 61);
     background-image: url(images/background-adare-restaurant.jpg), linear-gradient(black,white);
-    background-size: cover, cover;
-    background-repeat: no-repeat, repeat;;
-    background-position: center, center bottom;
+    /* background-image: linear-gradient(black,white); */
+    background-size: 100% 150%;
+    background-repeat: no-repeat,repeat;
+    background-position: center, absolute;
+    
 }
 .container {
     margin-left: auto;
@@ -25,18 +27,52 @@ header{
 
 nav{
     background-color: rgba(0, 0, 0, 0.493);
+    border-radius : 12px;
     margin-top:20px;
+    float: center;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    
+    
 }
 
-nav a{
-    text-decoration: none;
-    font-size:15px;
-    padding-left: 20px;
-    padding-right: 20px;
+nav .table{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
 }
+
+nav ul#hr-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    /* display: inline-block; */
+
+  }
+  
+  nav ul#hr-list li {
+    float: left;
+    display : inline;
+  }
+  
+  nav ul#hr-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  nav  ul#hr-list li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  nav .active {
+    background-color: #4CAF50;
+  }
+
 
 main{
     /* background-color:orange; */
@@ -49,6 +85,7 @@ main{
 
 footer{
     background-color:rgb(39, 38, 38);
+    margin-top: 400px;
     height: 100px;
     padding-top: 50px;
     text-align: center;
@@ -71,18 +108,48 @@ footer p{
     font-size: 13px;
 }
 
-a{
-    color: white;
-    font-size: 23px;
-    text-decoration-line: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+:root{
+--mainColor: rgb(0, 0, 0);
+--secondColor: transparent;
 }
 
-a:hover{
-    color: grey;
+.reserv{
+    background: transparent;
+    border: 2px solid red;
+    border-radius:12px;
+    padding: 10px 10px 10px 10px;
+    background:
+        linear-gradient(
+            to bottom, var(--secondColor) 0%,
+            var(--mainColor) 100%
+        );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 0px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-size .1s;
+}
+
+a.reserv:hover{
+    background-size: 4px 50px;
+    -webkit-box-shadow: -2px 3px 43px -7px rgba(255,8,8,1);
+    -moz-box-shadow: -2px 3px 43px -7px rgba(255,8,8,1);
+    box-shadow: -2px 3px 43px -7px rgba(255,8,8,1);
 }
 
 .maps{
     padding-bottom: 100px;
+}
+
+
+#left {
+    float: left;
+    
+}
+
+#right {
+    float: right;
+    
 }
