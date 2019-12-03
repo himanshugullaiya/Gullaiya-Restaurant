@@ -1,4 +1,4 @@
-html {
+html,body {
     height: 100%;
 }
 body{
@@ -72,8 +72,8 @@ nav ul#hr-list {
   nav .active {
     background:
         linear-gradient(
-            to bottom, var(--secondColor) 0%,
-            var(--mainColor) 80%
+            to bottom, white 0%,
+            var(--mainColor) 12%
         );
   }
 
