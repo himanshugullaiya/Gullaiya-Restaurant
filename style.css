@@ -70,7 +70,11 @@ nav ul#hr-list {
   }
   
   nav .active {
-    background-color: #4CAF50;
+    background:
+        linear-gradient(
+            to bottom, var(--secondColor) 0%,
+            var(--mainColor) 80%
+        );
   }
 
 
