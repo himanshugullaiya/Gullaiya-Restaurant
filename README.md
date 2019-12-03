@@ -1,2 +1,2 @@
 # Web-App Project
-Check out My [Restaurant](https://himanshugullaiya.github.io/Restaurant/) Website
+Check out My [Restaurant](https://himanshugullaiya.github.io/Gullaiya-Restaurant/) Website
